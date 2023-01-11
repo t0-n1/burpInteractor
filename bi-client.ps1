@@ -46,18 +46,16 @@ Function connect($hostname, $biid, $key) {
 
 Function encode($data) {
 
-    if ($data -eq $null) {
-        $data = @()
-    } else {
-        $data = [system.Text.Encoding]::ASCII.GetBytes($data)
-    }
-    return $data
+    return [system.Text.Encoding]::ASCII.GetBytes($data)
 }
 
 
 
 Function encodeToBase64($data) {
 
+    if ($data.Length -eq 0) {
+        $data = @()
+    }
     return [System.Convert]::ToBase64String($data)
 }
 
