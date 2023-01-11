@@ -33,7 +33,7 @@ def decrypt(data, key):
 
 def fetch(biid):
 
-    url = 'https://polling.burpcollaborator.net/burpresults'
+    url = 'https://polling.oastify.com/burpresults'
     parameters = {'biid': biid}
     r = get(url, headers = HEADERS, params = parameters)
     return loads(r.text)
@@ -104,7 +104,7 @@ def xor(data, key):
 
 
 # Required arguments
-hostname = argv[1] # hostname-1.burpcollaborator.net
+hostname = argv[1] # hostname-1.oastify.com
 biid = argv[2] # biid-2=
 key = argv[3] # S3cr3tK3y
 
